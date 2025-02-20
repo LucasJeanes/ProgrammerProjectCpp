@@ -1,6 +1,6 @@
 # Rain Effect Simulation
 
-A C++ project that simulates a rain effect in the console using multithreading and randomization. This project is built with Visual Studio and designed to demonstrate console manipulation and threading in C++.
+A C++ project that simulates a rain effect in the console using multithreading and randomisation. This project is built with Visual Studio and designed to demonstrate console manipulation and threading in C++.
 
 ---
 
@@ -11,7 +11,7 @@ A C++ project that simulates a rain effect in the console using multithreading a
 4. [Setup and Usage](#setup-and-usage)
 5. [Project Structure](#project-structure)
 6. [Credits](#credits)
-7. [License](#license)
+7. [Licence](#licence)
 
 ---
 
@@ -22,9 +22,9 @@ This project creates a visually appealing rain effect in the console window by u
 
 ## Features
 - **Multithreaded Execution**: Each raindrop is handled by a separate thread.
-- **Randomized Effects**: Raindrops have varying speeds, lengths, and positions.
-- **Console Manipulation**: Includes cursor movement, color changes, and window resizing.
-- **Customizable Parameters**: Configure rain density, trail length, and speed.
+- **Randomised Effects**: Raindrops have varying speeds, lengths, and positions.
+- **Console Manipulation**: Includes cursor movement, colour changes, and window resizing.
+- **Customisable Parameters**: Configure rain density, trail length, and speed.
 
 ---
 
@@ -33,8 +33,8 @@ This project creates a visually appealing rain effect in the console window by u
 - **Libraries**:
   - `<iostream>` for console output
   - `<thread>` for multithreading
-  - `<mutex>` for thread synchronization
-  - `<random>` for randomization
+  - `<mutex>` for thread synchronisation
+  - `<random>` for randomisation
   - Windows-specific libraries (`<windows.h>`) for console manipulation
 - **IDE**: Visual Studio
 
@@ -51,7 +51,7 @@ This project creates a visually appealing rain effect in the console window by u
 2. Build the solution (`Ctrl+Shift+B`).
 3. Run the executable (`F5` or `Ctrl+F5`).
 
-### Customization
+### Customisation
 You can modify the following parameters in `main.cpp`:
 - `rainCount`: Number of raindrops.
 - `rainLength`: Length of the rain column.
@@ -64,7 +64,7 @@ You can modify the following parameters in `main.cpp`:
 
 | File               | Description                                   |
 |--------------------|-----------------------------------------------|
-| `main.cpp`         | Entry point of the program                   |
+| `main.cpp`         | Entry point of the programme                  |
 | `ConsoleManager.h` | Header file for console management utilities  |
 | `ConsoleManager.cpp` | Implementation of console utilities         |
 | `RainEffect.h`     | Header file for rain effect logic             |
