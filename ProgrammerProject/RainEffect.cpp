@@ -1,4 +1,4 @@
-#include "RainEffect.h"
+ #include "RainEffect.h"
 #include <windows.h>
 #include <iostream>
 #include <mutex>
@@ -6,7 +6,7 @@
 
 extern std::mutex printMutex;
 
-void RainEffect(int rowX, int columnY, const int& trailLength, const int& speed) {
+void RainEffect(int rowX, int columnY, const int& trailLength, const int& speed, const int& rainColour, const int& trailColour) {
 	ConsoleManager consoleManager;
 
 	std::random_device rd;
@@ -18,11 +18,11 @@ void RainEffect(int rowX, int columnY, const int& trailLength, const int& speed)
 			{
 				std::lock_guard<std::mutex> guard(printMutex);
 				consoleManager.GotoXY(rowX, y);
-				if (y == columnY - 1) {
-					consoleManager.CursorColour(10); //10 green colour for last character
+				if (y == columnY - 1) { 
+					consoleManager.CursorColour(trailColour); //10 green colour for last character
 				}
 				else {
-					consoleManager.CursorColour(15); //15 white for current character
+					consoleManager.CursorColour(rainColour); //15 white for current character
 				}
 				std::cout << static_cast<char>(distrib(gen));
 			}
@@ -31,7 +31,7 @@ void RainEffect(int rowX, int columnY, const int& trailLength, const int& speed)
 				{
 					std::lock_guard<std::mutex> guard(printMutex);
 					consoleManager.GotoXY(rowX, y - 1);
-					consoleManager.CursorColour(10); //green character reprint
+					consoleManager.CursorColour(trailColour); //green character reprint
 					std::cout << randomChar;
 				}
 			}
