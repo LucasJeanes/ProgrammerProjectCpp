@@ -4,6 +4,6 @@
 #include "windows.h"
 #include <random>
 
-void RainEffect(int, int, const int&, const int&);
+void RainEffect(int, int, const int&, const int&, const int&, const int&);
 
 #endif
